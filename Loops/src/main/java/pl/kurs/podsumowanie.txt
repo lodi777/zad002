@@ -1,0 +1,30 @@
+Podsumowanie:
+•	Pętlę for używaj w przypadku, gdy znana jest liczba iteracji.
+•	Pętlę for each używaj do przeglądania wszystkich elementów kolekcji. Pętla for each operuje na kopiach elementów kolekcji więc nie można przez nią modyfikować elementów oryginalnych.
+•	Pętla while używaj w przypadku braku informacji na temat ilości iteracji.
+•	Pętlę do while używaj w sytuacji, gdy znasz ilość iteracji, ale chcesz, żeby blok instrukcji wykonał się co najmniej raz.
+
+
+
+//napisz metodę, która za pomocą petli while wyświeltli wszystkie liczby z zakresu od 0 do n włącznie (n to argument)
+
+  //Napisz metodę, która za pomocą pętli while doda do siebie wszyskie liczby mniejsze niż liczba podana w argumencie metody
+
+  //    Napisz metodę, która w argumencie przyjmie liczbę typu int np 5 i zwróci sumę liczb 5 + 4 + 3 + 2 + 1;
+    //    Napisz metodę, która zwróci booleana z odpowiedzią czy wszystkie liczby w danej tablicy  typu int podanej w argumencie są podzielne przez 2 i 3 jednocześnie;
+
+
+
+    nowa:
+    //    Napisz metodę, która przyjmuje dwa argumenty typu int np "a" oraz "b" i zwraca "a do potęgi b" (wykorzystaj do tego pętlę for);
+
+
+Praca domowa_1:
+Wymyśl w jaki inny sposób zapisać pętle for, żeby była nieskończona
+
+Praca domowa_2:
+Napisz metodę, która w argumencie przyjmie tablicę intów i zwróci nową tablicę wypłenioną tylko parzystymi liczbami z tablicy wejściowej. Tablica wynikowa nie może posiadać żadnych zer i ma mieć taki rozmiar ile jest liczb parzystych.
+
+
+Praca domowa_3
+Napisz metodę, która zwróci booleana z odpowiedzią czy dana tablica intów przekazana w argumecie jest posortowana (przykładowa sygnatura public boolean isSorted(int[] array)):

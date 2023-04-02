@@ -1,0 +1,47 @@
+
+Podsumowanie:
+•	Metoda – pewna funkcjonalność zawarta w klasie. Metody służą do wykonywania ciągu zdefiniowanych instrukcji, mogą zmieniać stan obiektu.
+•	Metoda posiada swoją sygnaturę (metody w danej klasie zawsze muszą się różnić swoją sygnaturą - sygnatura metody to: jej nazwa + parametry). W nawiasach okrągłych metody można zdefiniować jej parametry, które będziemy przekazywali w miejscu wywołania metody. Parametry metody to specjalne zmienne, które będą dostępne w ciele metody czyli w jej wnętrzu.
+•	Metoda instancji to metoda, która wywołuje się na obiekcie klasy, w której zdefiniowana jest dana metoda. W ciele tej metody (w implementacji) możemy odwoływać się do pól klasy (czyli do stanu obiektu). Przykład: calculatorCasio.addTwoNumbers(double a, double b);
+•	Metoda statyczna (ma mieć słowo static przed typem zwracanym) jest wywoływana na typie klasy, w której jest zdefiniowana, a nie na obiekcie tej klasy. Metoda ta nie ma dostępu do pól klasy (nie może skorzystać ze stanu obiektu). Przykład: Calculator.addTwoNumbersStaticVersion(double a, double b);
+•	Konstruktor – służy do utworzenia nowego obiektu. Ma nazwę identyczną jak nazwa klasy, nie posiada typu zwracanego. Do jego wywołania służy operator „new”.
+•	Konstruktor domyślny – jeżeli nie zdefiniowaliśmy co najmniej jednego własnego konstruktora w klasie to zawsze po kompilacji kodu pojawi się konstruktor domyślny, który nie przyjmuje żadnych argumentów (parametrów).
+•	WAŻNE!!!! – jeżeli utworzymy przynajmniej jeden własny konstruktor to kompilator nie wygeneruje nam już konstruktora domyślnego (wtedy musimy go jawnie zdefiniować w klasie, jeżeli będzie nam on potrzebny)!!!!
+•	!!!WAŻNE – referencja this jest przechowywana jako jedna ze składowych obiektu i wskazuje na ten właśnie obiekt.  Referencja ta nie jest jawna.
+•	Poprzez słowo this możemy odwoływać się również do innych konstruktorów .
+•	Jeżeli w ramach jednej klasy istnieje wiele metod o tej samej nazwie to mówimy o przeciążaniu metod - overloadingu (przykład: metoda print()). Ta sama zasada przy konstruktorach.
+•	Jeżeli w jednej klasie definiujemy metody o takiej samej nazwie to muszą różnic się one liczbą parametrów, lub typy tych parametrów muszą być różne.
+
+
+Praca domowa2:
+Napisz prosty kalkulator, który będzie wykonywał obliczenia na liczbach typu double. Program ma mieć dwie klasy:
+Calculator – ta klasa ma posiadać tylko metody add()(metodę add zrób w dwóch wersjach – dodającą 2 i 3 argumenty), subtract(), multiply(), divide() (to że w nawiasach nie podałem parametrów to nie oznacza, że Ty masz ich tam nie zdefiniować 😉). To ma być klasa narzędziowa – mówiłem na zajęciach co to oznacza.
+CalculatorRunner – klasa, w której będzie nasza metoda main(), masz tutaj przetestować metody z klasy Calculator.
+Praca domowa3:
+Stwórz prosty konwerter. Zdefiniuj sobie klasę GenericConverter która będzie posiadała metody do przeliczania: (operuj na doublach):
+- mile na kilometry,
+- kilometry na mile
+- kPa na psi (ciśnienie)
+- psi na bary
+- stopy na cale
+- stopnie Celsjusza na Farenheita
+W kolejnej klasie TimeConverter stwórz metody do przeliczania czasu (operuj na longach):
+- godziny na minuty,
+- minuty na sekundy,
+- sekundy na milisekundy.
+W Klasie ConvertersRunner przetestuj działanie swoich metod. Na końcu spróbuj przeliczyć 8 godzin na milisekundy.
+
+
+Praca domowa1:
+Stwórz sobie taką oto agregację:
+Person - będzie posiadał imię, nazwisko, wynagrodzenie, auto jakie posiada;
+Car – producent, model, moc, moment obrotowy, kolor;
+Klasa Person ma posiadać metodę buyCar(), dzięki której osoba zakupi auto, oraz sellCar(), dzięki której sprzeda auto.
+Stwórz sobie dodatkowo klasę CarWorkshop, gdzie będą:
+- pole Person o nazwie customer oraz pole Car o nazwie customerCar;
+       - oraz metody:
+welcomeCustomer() – metoda ta ma przywitać nowego klienta warsztatu z imienia i nazwiska, oraz ma wyświetlić jakim autem przyjechał;
+increasePowerAndTorque() – metoda ta ma podnosić osiągi samochodu o wskazane w parametrze metody wartości;
+changeColor() – metoda ma przemalować auto na inny kolor wskazany przez klienta;
+presentCarToCustomer() – metoda ma zaprezentować informacje o zmienionej mocy i kolorze klientowi.
+W klasie Runner stwórz odpowiednie obiekty i przetestuj działanie metod.

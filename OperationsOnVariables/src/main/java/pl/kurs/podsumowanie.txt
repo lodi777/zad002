@@ -1,0 +1,32 @@
+Podsumowanie:
+Kursant musi znać:
+•	jest pięć operatorów matematycznych: dodawanie, odejmowanie, mnożenie, dzielenie i dzielenie modulo (+, -, *, /, %) ( modulo najczęściej wykorzystuje się do sprawdzenia czy liczba jest parzysta),
+•	Operator dzielenia na argumentach typu całkowitoliczbowego w wyniku również zwraca wartość całkowitą, żeby zwrócić liczbę zmiennoprzecinkową to przynajmniej jeden argument musi być zmiennoprzecinkowy. Kiedy jeden z argumentów jest zmiennoprzecinkowy np. double to następuje promocja typu drugiego argumentu też do double.
+•	Operatory skrócone, oraz, że występuje automatyczna konwersja wyniku do typu zmiennej podczas używania skróconego zapisu.
+•	Jest siedem operatorów porównania (==, !=, <, <=, >, >=, instanceof), zawsze zwracają wartość logiczną (true lub false),
+•	Są trzy operatory logiczne: koniunkcja, alternatywa i negacja (&&, ||, !), jak one działają,
+•	Inkrementacja i dekrementacja, (podział na przedrostkową i przyrostkową – wiedzieć jakie ma znaczenie -> patrz przykład z działaniami 2 * ++m i 2 * n++).
+•	Konkatenacja to łączenie napisów – można łączyć zmienne typu String za pomocą „+”, jak i również łańcuchy znaków. Pamiętać, o kolejności czyli, że 5 + 5 + ABC da 10ABC, a ABC + 5 + 5 da ABC55.
+•	Konwersja typów – zawężająca i rozszerzająca. Zawężająca np. z double na int obcina nam wartość dziesiętną (NIE ZAOKRĄGLA!!).
+
+Praca domowa1: Codziennie powtarzać (przepisywać na nowo) to co zamieściłem w Twoim InteliJ.
+
+Praca domowa2:
+Napisz program, w którym zadeklarujesz dwie zmienne typu int o nazwach firstNumber i secondNumber. Do tych zmiennych przypisz dowolne liczby, a następnie wykorzystując operatory relacyjne i logiczne wyświetl wyniki następujących wyrażeń logicznych:
+- czy firstNumber nie jest większy od secondNumber?
+- czy firstNumber pomnożone przez 3 jest większe od secondNumber?
+- czy secondNumber jest mniejsze od firstNumber + 2 i jednocześnie większe od firstNumber pomniejszonego o 5?
+- czy iloczyn firstNumber i secondNumber nie jest parzysty?
+
+
+Praca domowa3: Pamiętając to co dowiedziałeś się z tej lekcji spróbuj odszyfrować słowo(wyświetl w konsoli) zbudowane z takich znaków:
+char l1 = 'T';
+char l2 = 'q';
+char l3 = 's';
+char l4 = 'j';
+char l5 = 'o';
+char l6 = 'h';
+//rozwiązanie może być zapisane w jednym soucie sout(l1 + l2 + l3...)
+Nie możesz przypisać jawnie do zmiennych nowych znaków, operuj na samych zmiennych. Rozwiązanie da się zapisać w jednej linijce kodu (w System.out.println()).
+Podpowiedź: kolejność zmiennych jest prawidłowa (l1 to pierwsza litera słowa, l6 to ostatnia), spróbuj wykorzystać to co dowiedziałeś się o typie znakowym z pierwszej lekcji… 😉
+

@@ -1,0 +1,5 @@
+Zadanko na rozgrzewkę – stworzyć poniższe modele danych a następnie utworzyć co najmniej po 3 obiekty w klasie MyObjects, gdzie będzie metoda main:
+Book (tytuł, autora, ISBN, rok wydania, wydawcę) ;
+Student(imie, nazwisko, numer indeksu, wydział, kierunek, rok studiów);
+Invoice (numer fv, produkty, cena łączna, data wystawienia);
+Company(nazwę, adres, forma prawna, kierownictwo, data założenia, kody PKD);

@@ -1,0 +1,9 @@
+Praca domowa:
+Napisz kalkulator wykonujący działania na liczbach typu double, w którym będziesz za pomocą Skannera najpierw
+ wprowadzał pierwszą liczbę, następnie operator, a na końcu drugą liczbę. Wykorzystaj podstawowe
+  matematyczne (+, -, *, /, %) oraz uwzględnij potęgowanie (na pytanie o operator masz wpisać „potęgowanie”)
+ Skorzystaj z konstrukcji switch case (tej skróconej, dostępnej od Javy 13/14, w przypadku nierozpoznania
+  operatora zwróć wartość Double.NaN – omówimy sobie na lekcji czym jest ten NaN i jaką pełni funkcję i do
+   czego jest używany).
+Program ma posiadać dwie klasy: serwis Calculator z jedną publiczną metodą (może być statyczna) calculate()
+(tu wykorzystaj switch case) oraz CalculatorRunner, gdzie będzie metoda main().

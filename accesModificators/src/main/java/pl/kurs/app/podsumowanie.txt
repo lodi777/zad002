@@ -1,0 +1,40 @@
+Podsumowanie:
+Kursant musi znać:
+•	Czym jest Pakiet?
+        Pakiety to inaczej foldery, służą do grupowania klas wg. przyjętego przez nas sposobu np.:
+            •	datatypes lub models lup domain dla naszych typów danych;
+            •	services dla naszych serwisów;
+            •	app dla klas, w których będą wykonywane operacje na danych.
+
+•	Czym są modifikatory?
+        Modyfikatory dostępu określają, kto będzie mógł korzystać z naszej klasy lub z poszczególnych jej pól, metod czy konstruktorów.
+            •	public – pozwala na dostęp z klas znajdujących się w innych pakietach;
+            •	default – domyślny czyli brak specyfikatora, pozwala na dostęp z klasy znajdującej się w tym samym pakiecie;
+            •	protected -  działanie identyczne jak default, dochodzi możliwość odwoływania się do składowych klasy (pól, metod i konstruktorów) oznaczonych jako protected w klasach dziedziczących;
+            •	private – do elementów oznaczonych tym modyfikatorem możemy odwołać się tylko w tej klasie, w której znajdują się te elementy;
+    Słowa private i protected nie mogą określać klas (chyba, że będą to klasy wewnętrzne)!
+
+•	Czym jest komponent JavaBeans?
+    JavaBean to po prostu standard:
+        -Wszystkie właściwości prywatne (użyj getters/setters )
+         -Public konstruktor bez argumentów
+        -Implementuje Serializable (public class Car implements Serializable).
+
+Praca domowa1:
+Napisz program, który pozwala na umieszczenie jakiegoś obiektu w przestrzeni trójwymiarowej.
+Ten obiekt reprezentuje klasa o nazwie „Object3D”. Klasa Object3D ma trzy współrzędne: a, b i c (typy całkowitoliczbowe). Klasa Object3D powinna być zgodna z JavaBeans. Klasa powinna posiadać również konstruktor umożliwiający stworzenie punktu wraz z początkowymi współrzędnymi.
+Stwórz klasę „ObjectController”, która będzie posiadała pole typu Object3D oraz 8 metod, dzięki którym możemy manipulować punktem (obiektem klasy Object3D) w przestrzeni trójwymiarowej
+- increaseA() – zwiększa wartość pola a obiektu o 1;
+- decreaseA() – zmniejsza wartość pola a obiektu o 1;
+- increaseB() – zwiększa wartość pola b obiektu o 1;
+- decreaseB() – zmniejsza wartość pola b obiektu o 1;
+- increaseC()– zwiększa wartość pola c obiektu o 1;
+- decreaseC() – zmniejsza wartość pola c obiektu o 1;
+- resetAll() – zeruje wszystkie współrzędne;
+- resetToDefault() - metoda, która ustawi domyślne współrzedne.
+Klasy Object3D oraz ObjectController umieść w osobnych pakietach. Na koniec przetestuj swój program w klasie Object3DApp, gdzie będzie znajdowała się metoda „main”.
+
+Praca domowa2:
+Skopiuj sobie do aktualnego projektu zadania domowe z zajęć nr 3 (programowanie obiektowe), gdzie wykonywałeś agregacje z ludzkim ciałem, sklepem internetowym oraz bankiem. Teraz musisz w modelach danych ustawić wszystkie pola na private i w klasach z metodami main() zastosować gettery/setery.
+
+

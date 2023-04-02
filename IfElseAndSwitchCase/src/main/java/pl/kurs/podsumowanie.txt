@@ -1,0 +1,45 @@
+Podsumowanie:
+Kursant musi znać:
+•	Jak działa instrukcja if: „jeżeli true to wykonaj to”
+•	Jak działa instrukcja if-else: “jeżeli true to wykonaj to, w przeciwnym wypadku wykonaj tamto”
+•	Jak działa if – else if – else (w tym przypadku wykona się zawsze tylko napotkany pierwszy poprawny warunek, reszta nie będzie wykonana nawet jeżeli będzie prawdziwa);
+•	w sytuacji, kiedy mamy tylko jedną instrukcję do wykonania to możemy pominąć nawiasy klamrowe
+•	if’y można zagnieżdżać
+•	jak używać konstrukcji switch case:
+Switch case przeznaczony jest przedewszystkim do  warunków o wielu rozgałęzieniach. Nie operuje na warunkach logicznych tylko na:
+•	Wartościach całkowitoliczbowych;
+•	Znakowych;
+•	Enumeracyjnych;
+•	Stringach (dopiero od Javy 7);
+
+
+
+Praca domowa_1:
+
+Zdefiniuj klasę Car reprezentującą samochód z otwieranym dachem. Samochód powinien przechowywać informację o modelu, marce, ale także to,
+czy aktualnie się porusza oraz, czy dach jest otwarty. Stwórz metody otwierającą oraz zamykającą dach. Ograniczeniem jest to,
+że nie powinno być możliwe otwarcie ani zamknięcie dachu w sytuacji, gdy samochód jest w ruchu, oraz wtedy,
+kiedy dach jest już w wymaganym stanie (nie da się otworzyć dachu, kiedy jest już otwarty).
+Jeśli samochód jest w ruchu i ktoś spróbuje otworzyć lub złożyć dach powinien zostać wyświetlony komunikat w konsoli oraz
+powinna znaleźć się podpowiedź co zrobić dalej,  a dach powinien zostać w swojej aktualnej pozycji.
+Zastanów się, gdzie stworzyć metody – czy może w klasie Car, czy może zrobić do tego oddzielny serwis… zostawiam to do Twojego
+przemyślenia, na zajęciach opowiesz mi dlaczego wybrałeś takie a nie inne rozwiązanie.
+W osobnej klasie stwórz obiekt reprezentujący samochód i przetestuj otwieranie oraz zamykanie dachu w sytuacji,
+gdy samochód jest w ruchu oraz w spoczynku, wraz z kombinacjami, kiedy ma dach otwarty lub zamknięty.
+
+
+Praca domowa_2:
+Stwórz aplikację „Burgerowania”.
+Stwórz klasę Burger z polami String name, boolean cheese, boolean onion i boolean jalapeno. Burger ma być JavaBeans. Wygeneruj dodatkowo metodę toString().
+
+Stwórz klasę BurgerFactory, która będzie posiadała tylko jedną metodę zwracającą burgera np createBurger(String burgerName) – zrób to na ifach.
+Metoda ma rozpoznawać po nazwie jakiego zwrócić ma burgera:
+„Ogniste Uderzenie” – burger z cebulą i jalapeno;
+„Cheeseburger” – burger z serem;
+„PolakBurger” – burger z cebulą i serem;
+
+Stwórz klasę BurgerTest, gdzie stworzysz konstrukcje switch case – będziesz musiał podać nazwę burgera i jeżeli taki
+ burger będzie istniał w menu burgerowni to masz otrzymać taki obiekt typu Burger i masz wydrukować jego składniki
+ w konsoli. Pamiętaj, żeby przewidzieć przypadek, w którym podasz nazwę burgera, który nie istnieje w menu.
+
+Wszystkie klasy mają być umieszczone w odpowiednich pakietach: app, datatypes (lub models) i services.

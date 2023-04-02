@@ -1,0 +1,64 @@
+Podsumowanie:
+Kursant musi wiedzieć:
+- Czym jest klasa, a czym jest obiekt,
+            Klasa - definicja zestawu cech i zachowań danego elementu. Można to sobie wyobrazić jako pewien szablon do późniejszego wypełnienia. Cechy przechowywane w klasie nazywane są polami, a zachowania metodami. W klasie istnieją jeszcze konstruktory, które odpowiadają za tworzenie nowych obiektów. Pola, metody i konstruktory określamy mianem składowych klasy.
+
+            Obiekt – konkretna reprezentacja klasy (instancja). Np. auto marki Audi, model A4, o nadwoziu typu sedan, kolor niebieski.
+
+- zmienne zawarte w klasie nazywane są polami klasy,
+-zmienne zawarte w obiekcie nazywane są składowymi obiektu,
+- 3 cechy obiektu: stan, zachowanie i tożsamość,
+- czym jest referencja na obiekt:
+	        Referencja to wartość, która oznacza lokalizację (adres) obiektu w pamięci.
+- znać wartości domyślne dla pól nowoutworzonych obiektów:
+        •	dla liczb jest to 0,
+        •	dla boolean jest to false,
+        •	dla char jest to ‘\u0000’ (brak znaku),
+        •	dla typów obiektowych np. Stringa jest to null;
+
+- Relacje między klasami:
+        •	Zależność (używa) – np. klasa Order używa klasy Account ponieważ obiekty klasy Order potrzebują dostępu do obiektów Account w celu sprawdzenia wypłacalności klienta.
+        •	Agregacja (zawiera):
+                Agregacja oznacza, że klasa jest skomponowana z innych obiektów, po prostu zawiera je w sobie.
+                Kompozycja to szczególny przypadek agregacji, oznacza, że jakiś obiekt nie może istnieć bez innego obiektu np. samochód nie może istnieć bez silnika lub człowiek nie może istnieć bez mózgu.
+        •	Dziedziczenie (jest): wyraża związek pomiędzy klasą ogólną a klasą specjalną np. klasa Dog dziedziczy po klasie Animal lub klasa Car dziedziczy po klasie Vehicle
+- jak tworzyć nowy obiekt za pomocą konstruktora bezparametrowego,
+- kilka referencji może wskazywać na jeden obiekt.
+
+
+Zadanko na rozgrzewkę – stworzyć poniższe modele danych a następnie utworzyć co najmniej po 3 obiekty w klasie MyObjects, gdzie będzie metoda main:
+Book (tytuł, autora, ISBN, rok wydania, wydawcę) ;
+Student(imie, nazwisko, numer indeksu, wydział, kierunek, rok studiów);
+Invoice (numer fv, produkty, cena łączna, data wystawienia);
+Company(nazwę, adres, forma prawna, kierownictwo, data założenia, kody PKD);
+
+
+
+
+Praca domowa1:
+Stwórz taką agregację z klas:
+Klient zamawiający – Imię, nazwisko, informacja czy klient jest premium
+Pracownik– imię, nazwisko, staż pracy, rodzaj umowy o pracę, wynagrodzenie
+Zamówienie – data zamówienia, przedmiot zamówienia, kto zamawiał, kto pakował oraz pole „dostawa”
+Dostawa – informacja jaka forma dostawy ( w String np. czy kurier czy paczkomat), adres nadawcy, adres doręczenia, informacja czy towar jest „fragile”;
+Adres – posiada informacje o ulicy, numerze domu oraz mieście;
+Na koniec stwórz klasę InternetShop, gdzie stworzysz odpowiednie obiekty i „połączysz” je.
+
+Praca domowa2:
+Stwórz taką oto agregację:
+Ciało – klasa, która będzie miała pola typu serce, wątroba, płuca, mózg, mięśnie, oraz pole wiek;
+Serce – ma mieć informację o  grupie krwi, tętnie spoczynkowym, tętnie maksymalnym (ta wartość na się zmieniać automatycznie w zależności od podanego wieku ciała);
+Wątroba – ma mieć informację o poziomie czynników AST i ALT;
+Płuca – mają mieć informację o pojemności, oraz sprawności napełniania wyrażoną w doublu (np. 0.9 to 90%).
+Mózg – ma mieć informację o poziomie IQ oraz o wadze.
+Mięśnie – mają przechowywać informacje o sile oraz szybkości.
+Na koniec stwórz klasę HumanBody, gdzie stworzysz odpowiednie obiekty i „połączysz” je.
+
+Praca domowa3:
+Stwórz taką oto agregację:
+Konto bankowe – zawiera osobę do której należy, oraz aktualny stan gotówki (dla uproszczenia użyj doubla)
+Adres – zawiera addressLine1, addressLine2, kod pocztowy i miasto
+Persona – posiada imię, nazwisko, PESEL, dwa adresy: jeden zameldowania, drugi do korespondencji
+Kredyt – zawiera osobę, która pożyczyła, oprocentowanie (dla uproszczenia użyj doubla), kwotę pożyczoną, kwotę oddaną, czas kredytu w miesiącach.
+Na koniec stwórz klasę Bank, w której będzie metoda „main”, gdzie utworzysz wszystkie obiekty i „połączysz” je.
+

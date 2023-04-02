@@ -1,0 +1,16 @@
+
+Podsumowanie:
+Kursant musi zapamiętać:
+- każdy plik z rozszerzeniem .java jest kompilowany przez kompilator javy do bytecodu czyli pliku z rozszerzeniem .class, następnie maszyna wirtualna javy uruchamia ten kod.
+- typy prymitywne całkowitoliczbowe (nie musisz pamiętać ich dokładnego zakresu tylko rząd wielkości), najczęściej używanym typem jest int i long.
+- typy prymitywne zmiennoprzecinkowe: float to ok 6-7 cyfr po przecinku, double to ok 15-16 cyfr po przecinku.
+- to, że float i double nie nadają się do obliczeń finansowch – praca domowa dla Ciebie: poczytać o tym problemie w sieci.
+-to, że typ char zapisuje się w apostrofach i można za jego pomocą wyświetlić dowolny znak z tabeli unicode (np. ‘\u2606’), można też przypisać liczbę dziesiętną do chara – wyświetli wtedy odpowiedni znak z tabeli ASCII.
+-boolean przyjmuje dwie wartości: true i false.
+-String to typ obiektowy czyli posiada jakiś stan i zachowanie. String jest łańcuchem znaków, ale może również posiadać jeden znak lub być pusty  („Ala ma kota”, „a”, „”).
+- jak deklarować i inicjalizować zmienne
+Praca domowa: codziennie minimum 30 min (najlepiej godzinę)  poświęcić na powtórzenie tych przykładów. Chodzi o utrwalanie poprzez powtarzanie.
+
+Praca domowa_2: Stwórz klasę o nazwie Person, a w niej metodę main, następnie w metodzie main zadeklaruj i zainicjalizuj zmienne, które odpowiadają pewnym cechom konkretnej osoby: imię, nazwisko, PESEL, rok urodzenia, zawód, czy jest żonaty/mężatką itp (im więcej tym lepiej – pomyśl co możesz jeszcze dodać od siebie 😉). Przemyśl dobrze jakich typów zmiennych użyć i jak je nazwać. Pamiętaj o lowerCamelCase!
+Drugą częścią zadania jest krótkie przedstawienie tejże osoby za pomocą metod System.out.println i System.out.print (Jej opis ma się wyświetlić w konsoli i ma być dobrze sformatowany) np. To jest Maciek Nowak. Maciek urodził się w 1985 roku. Maciek pracuje jako mechanik samochodowy… itp. Pamiętaj, żeby używać zdefiniowanych zmiennych!!
+
